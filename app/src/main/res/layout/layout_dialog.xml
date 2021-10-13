@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#11ffffff"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/my_dialog"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:padding="10dp"
+
+            >
+
+            <Button
+                android:id="@+id/dialog_confirm"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/tick"
+                android:layout_marginRight="15dp"
+                />
+            <Button
+                android:id="@+id/dialog_cancel"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/cancel"
+                />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#E4E4E4" />
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="待办事项"
+            android:textColor="#38ADFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/task_title"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="输入待办事项"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/task_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="时长 单位:分钟"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="3"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="10dp"
+            android:background="#E4E4E4" />
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/no"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@null"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="No"-->
+<!--                android:textColor="#7D7D7D"-->
+<!--                android:textSize="16sp" />-->
+
+<!--            <View-->
+<!--                android:layout_width="1px"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="#E4E4E4" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/yes"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@null"-->
+<!--                android:gravity="center"-->
+<!--                android:singleLine="true"-->
+<!--                android:text="Yes"-->
+<!--                android:textColor="#38ADFF"-->
+<!--                android:textSize="16sp" />-->
+<!--        </LinearLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>
